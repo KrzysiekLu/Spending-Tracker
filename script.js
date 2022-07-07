@@ -1,6 +1,6 @@
 import Localbase from "localbase";
 import dateModule from "./date.js";
-import TransactionsList from "./TransactionsList.js";
+import transactionsList from "./TransactionsList.js";
 
 export class App {
   dataBase;

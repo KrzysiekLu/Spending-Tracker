@@ -21,4 +21,4 @@ class TransactionsList {
   renderTransactions() {}
 }
 
-export default transactionsList = new TransactionsList();
+export const transactionsList = new TransactionsList();
