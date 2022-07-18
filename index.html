@@ -4,24 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="stylesheet" href="styles/style.css" />
     <script src="script.js" defer type="module"></script>
     <title>Filter Map Reduce</title>
   </head>
   <body>
-    <input class="value" type="number" />
-
-    <input class="catagory" list="cetegories" />
-    <datalist id="cetegories">
-      <option value="food"></option>
-      <option value="fun"></option>
-      <option value="invest"></option>
-    </datalist>
-    <input class="date" type="date" />
-    <button class="add">ADD</button>
-
+    <!-- Create new transaction -->
+    <section class="add">
+      <label class="add__label" for="add__value"></label>
+      <input class="add__value input add__input" type="number" />
+      <label class="add__label" for="add__catagor"></label>
+      <input class="add__catagory add__input" list="cetegories" />
+      <datalist id="cetegories">
+        <option value="food"></option>
+        <option value="fun"></option>
+        <option value="invest"></option>
+      </datalist>
+      <label class="add__label" for="add__date"></label>
+      <input class="add__date add__input" type="date" />
+      <button class="add__button-add button">ADD</button>
+    </section>
+    <!-- Display transaction list -->
     <section class="transaction-list">
-      <button class="last">Last</button>
+      <button class="transactions__showbutton">Last</button>
+      <div class="transactions__list"></div>
     </section>
   </body>
 </html>
